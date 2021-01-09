@@ -1,4 +1,3 @@
-import { NumericLiteral } from "typescript";
 import { formatPrice } from "./helpers";
 
 type Props = {
@@ -7,13 +6,13 @@ type Props = {
     onSubmit: () => void;
 }
 
-function OrderSummary({ amount, totalPrice , onSubmit } : Props) {
+function OrderSummary({ amount, totalPrice, onSubmit }: Props) {
     return (
         <div className="order-summary-container">
             <div className="order-summary-content">
                 <div>
                     <span className="amount-selected-container">
-                        <strong className="amount-selected">{ amount }</strong>
+                        <strong className="amount-selected">{amount}</strong>
                     PEDIDOS SELECIONADOS
                     </span>
                     <span className="order-summary-total">
